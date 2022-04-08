@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="h3 fw-bold text-danger">Edit Contact</p>
+      <p class="fst-italic">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta dolore,
+        quod deserunt, tenetur beatae dignissimos sequi corporis minus accusamus
+        esse officiis nesciunt assumenda voluptatum ex quam voluptas
+        necessitatibus autem facere?
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Edit Form -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <form (submit)="updateContact()">
+        <div class="mb-2">
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Name"
+            [(ngModel)]="contact.name"
+          />
+        </div>
+
+        <div class="mb-2">
+          <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Email"
+            [(ngModel)]="contact.email"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="number"
+            name="mobile"
+            class="form-control"
+            placeholder="Mobile"
+            [(ngModel)]="contact.mobile"
+          />
+        </div>
+        <div class="mb-2">
+          <input
+            type="text"
+            name="company"
+            class="form-control"
+            placeholder="Company"
+            [(ngModel)]="contact.company"
+          />
+        </div>
+        <div class="mb-2">
+          <select
+            name="group"
+            class="form-control"
+            *ngIf="groups.length > 0"
+            [(ngModel)]="contact.groupId"
+          >
+            <option value="">Select a Group</option>
+            <option [value]="group.id" *ngFor="let group of groups">
+              {{ group.name }}
+            </option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <input type="submit" class="btn btn-danger" value="Update" />
+          <a routerLink="/" class="btn btn-dark ms-2">Back</a>
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <img src="/assets/user.png" class="contact-img" alt="user icon" />
+    </div>
+  </div>
+</div>

@@ -1,0 +1,66 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Leanne Gray",
+      "company": "YouTube",
+      "email": "gray@gmail.com",
+      "title": "Youtuber",
+      "mobile": "+2235689",
+      "groupId": "4"
+    },
+    {
+      "id": 2,
+      "name": "Joy Howe",
+      "company": "Facebook",
+      "email": "howell@gmail.com",
+      "title": "Customer Rep",
+      "mobile": "+2235689",
+      "groupId": "2"
+    },
+    {
+      "id": 3,
+      "name": "Clement Gray",
+      "company": "Yahoo",
+      "email": "clement@gmail.com",
+      "title": "Driver",
+      "mobile": "+2235689",
+      "groupId": "5"
+    },
+    {
+      "id": 4,
+      "name": "Patrice Lemon",
+      "company": "Optal",
+      "email": "pat@gmail.com",
+      "title": "CEO",
+      "mobile": "+2235689",
+      "groupId": "6"
+    }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "name": "Colleague"
+    },
+    {
+      "id": 2,
+      "name": "Friend"
+    },
+    {
+      "id": 3,
+      "name": "Family"
+    },
+    {
+      "id": 4,
+      "name": "Service"
+    },
+    {
+      "id": 5,
+      "name": "Community"
+    },
+    {
+      "id": 6,
+      "name": "Social"
+    }
+  ]
+}
