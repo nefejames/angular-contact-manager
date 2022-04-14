@@ -27,6 +27,15 @@ export class AddContactComponent implements OnInit {
   }
 
   public onSubmit() {
+    if (
+      !this.contact.name ||
+      !this.contact.company ||
+      !this.contact.email ||
+      !this.contact.mobile ||
+      !this.contact.groupId
+    ) {
+      return;
+    }
     this.contactsService.createContact(this.contact).subscribe(() => {
       this.router.navigate(['/']);
     });
